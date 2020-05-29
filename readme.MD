@@ -13,3 +13,13 @@
 
 1. Check `requirements.txt`, need to install two extra packages `django-extra-fields==2.0.5`
    `djangorestframework==3.11.0`
+
+API output:
+
+1. [GetAllShops](http://127.0.0.1:8000/geo/app/all/shops/)
+
+![output](./output_results/all_shops.png)
+
+2. [GetNearByShops](http://127.0.0.1:8000/geo/app/all/shops/)
+
+![output](./output_results/shops_near_me.png)
