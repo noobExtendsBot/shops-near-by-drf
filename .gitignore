@@ -1,2 +1,5 @@
 # ENV
 env/
+
+# IGNORE data.json as I haven't used it
+data.json
