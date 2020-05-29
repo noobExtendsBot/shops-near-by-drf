@@ -5,7 +5,7 @@
 ## INFO:
 
 > Project layout is different from the artice mentioned, but `nearbyshops` goes under `geoapp` and `api` folder has all the DRF parts.
-> There are two views `GetAllShops` and `GetNearByShops`. First one returns all the shops from DB, second one takes: `longitude` and `latitude` in URL. Like:`http://127.0.0.1:8000/geo/app/shops/near/me/?longitude=30.34506056496845&latitude=77.95407592165211`
+> There are two views `GetAllShops` and `GetNearByShops`. First one returns all the shops from DB, second one takes: `longitude` and `latitude` in URL. Like:`http://127.0.0.1:8000/geo/app/shops/near/me/?longitude=30.3340&latitude=77.9602`
 
 ---
 
