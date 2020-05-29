@@ -7,7 +7,7 @@ from django.contrib.gis.db.models.functions import Distance
 from .serializers import ShopSerializer
 from geoapp.models import Shop
 
-class GetNearByShops(generics.ListAPIView):
+class GetAllShops(generics.ListAPIView):
     serializer_class = ShopSerializer
     queryset = Shop.objects.all()
 
@@ -19,7 +19,7 @@ class GetNearByShops(generics.ListAPIView):
         else:
             return Response(serializer.data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-class GetShopByDistance(APIView):
+class GetNearByShops(APIView):
     serializer_class = ShopSerializer
     
     def get(self, request, *args, **kwargs):
