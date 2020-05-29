@@ -20,6 +20,6 @@ API output:
 
 ![output](./output_results/all_shops.png)
 
-2. [GetNearByShops](http://127.0.0.1:8000/geo/app/all/shops/)
+2. [GetNearByShops](http://127.0.0.1:8000/geo/app/shops/near/me/?longitude=30.3340&latitude=77.9602)
 
 ![output](./output_results/shops_near_me.png)
