@@ -11,14 +11,6 @@ class GetAllShops(generics.ListAPIView):
     serializer_class = ShopSerializer
     queryset = Shop.objects.all()
 
-    def get(self, request):
-        qs = Shop.objects.all()
-        serializer = ShopSerializer(data=qs, many=True)
-        if serializer.is_valid():
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        else:
-            return Response(serializer.data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
 class GetNearByShops(APIView):
     serializer_class = ShopSerializer
     
